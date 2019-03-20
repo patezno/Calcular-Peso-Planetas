@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public enum Planeta {
 
     MERCURY(3.303e+23, 2.4397e6),
@@ -46,11 +49,28 @@ public enum Planeta {
         return getG() * planeta.getMasa() / Math.pow(planeta.getRadio(), 2);
     }
 
-    public static Planeta[] getPlanetasTerrestres() {
-        return null;
+    public static List<Planeta> getPlanetasTerrestres() {
+
+        List<Planeta> planetasTerrestres = new ArrayList<Planeta>();
+
+        planetasTerrestres.add(EARTH);
+        planetasTerrestres.add(MARS);
+        planetasTerrestres.add(VENUS);
+        planetasTerrestres.add(MERCURY);
+
+        return planetasTerrestres;
     }
 
-    public static Planeta[] getGigantesGaseosos() {
-        return null;
+    public static List<Planeta> getGigantesGaseosos() {
+
+        List<Planeta> gigantesGaseosos = new ArrayList<Planeta>();
+
+        gigantesGaseosos.add(JUPITER);
+        gigantesGaseosos.add(SATURN);
+        gigantesGaseosos.add(URANUS);
+        gigantesGaseosos.add(NEPTUNE);
+
+        return gigantesGaseosos;
+
     }
 }
