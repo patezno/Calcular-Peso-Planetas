@@ -9,7 +9,21 @@ public enum Planeta {
     URANUS(8.686e+25, 2.5559e7),
     NEPTUNE(1.024e+26, 2.4746e7);
 
+    private double masa = 0d;
+    private double radio = 0d;
+    private final double G = 6.67300E-11;
+
     Planeta(double masa, double radio) {
+        this.masa = masa;
+        this.radio = radio;
+    }
+
+    public double getMasa() {
+        return masa;
+    }
+
+    public double getRadio() {
+        return radio;
     }
 
     public static Planeta[] getPlanetasTerrestres() {
@@ -21,14 +35,6 @@ public enum Planeta {
     }
 
     public double pesoSuperficie(double peso) {
-        return 0;
-    }
-
-    public double getRadio() {
-        return 0;
-    }
-
-    public double getMasa() {
         return 0;
     }
 }
