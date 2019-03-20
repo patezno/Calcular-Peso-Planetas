@@ -1,5 +1,5 @@
 # Calcular-Peso-Planetas
-Se trata de calcular el peso de una persona en el resto de planetas de nuestro Sistema Solar
+Se trata de calcular el peso de una persona en el resto de planetas de nuestro Sistema Solar.
 El peso en otro planeta se lo preguntáis a los que han estudiado Física en la universidad (call @Toni March) y así no tenéis que programar esta semana. 
 Si no se lo saben de memoria, aplicad este sencilla fórmula:
 ```
