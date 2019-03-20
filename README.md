@@ -30,9 +30,6 @@ NEPTUNE (1.024e+26, 2.4746e7);
 ```
 La salida del programa en consola es esta (sirve también como caso test), donde 175 es tu peso en la Tierra:
 ```
-tu_masa = tu_peso_en_la_Tierra / gravedad_superficial_tierra;
-```
-```
 $ java Planet 175 
 Your weight on MERCURY is 66.107583 
 Your weight on VENUS is 158.374842 
