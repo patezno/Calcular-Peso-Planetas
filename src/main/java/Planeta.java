@@ -26,15 +26,31 @@ public enum Planeta {
         return radio;
     }
 
+    public double getG() {
+        return G;
+    }
+
+    public double pesoSuperficie(double peso) {
+        return calcularMasa(peso) * this.gravedadSuperficie();
+    }
+
+    public double calcularMasa(double peso) {
+        return peso / gravedadSuperficie(EARTH);
+    }
+
+    public double gravedadSuperficie() {
+        return getG() * this.getMasa() / Math.pow(this.getRadio(), 2);
+    }
+
+    public double gravedadSuperficie(Planeta planeta) {
+        return getG() * planeta.getMasa() / Math.pow(planeta.getRadio(), 2);
+    }
+
     public static Planeta[] getPlanetasTerrestres() {
         return null;
     }
 
     public static Planeta[] getGigantesGaseosos() {
         return null;
-    }
-
-    public double pesoSuperficie(double peso) {
-        return 0;
     }
 }

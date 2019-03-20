@@ -59,7 +59,7 @@ public class CalcularPesoTest {
     public void PesoSuperficieMercurioTest() {
         Planeta planeta = Planeta.MERCURY;
         double pesoHumano = 175;
-        assertEquals(66.107583, planeta.MERCURY.pesoSuperficie(pesoHumano), 0.001);
+        assertEquals(66.107583, Planeta.MERCURY.pesoSuperficie(pesoHumano), 0.001);
     }
 
     @Test
