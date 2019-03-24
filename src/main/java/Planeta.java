@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.EnumSet;
 
 public enum Planeta {
 
@@ -49,28 +48,11 @@ public enum Planeta {
         return getG() * planeta.getMasa() / Math.pow(planeta.getRadio(), 2);
     }
 
-    public static List<Planeta> getPlanetasTerrestres() {
-
-        List<Planeta> planetasTerrestres = new ArrayList<Planeta>();
-
-        planetasTerrestres.add(EARTH);
-        planetasTerrestres.add(MARS);
-        planetasTerrestres.add(VENUS);
-        planetasTerrestres.add(MERCURY);
-
-        return planetasTerrestres;
+    public static EnumSet<Planeta> getPlanetasTerrestres() {
+        return EnumSet.range(Planeta.MERCURY, Planeta.MARS);
     }
 
-    public static List<Planeta> getGigantesGaseosos() {
-
-        List<Planeta> gigantesGaseosos = new ArrayList<Planeta>();
-
-        gigantesGaseosos.add(JUPITER);
-        gigantesGaseosos.add(SATURN);
-        gigantesGaseosos.add(URANUS);
-        gigantesGaseosos.add(NEPTUNE);
-
-        return gigantesGaseosos;
-
+    public static EnumSet<Planeta> getGigantesGaseosos() {
+        return EnumSet.complementOf(getPlanetasTerrestres());
     }
 }
