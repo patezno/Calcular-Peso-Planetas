@@ -1,5 +1,5 @@
 # Calcular-Peso-Planetas
-Se trata de calcular el peso de una persona en el resto de planetas de nuestro Sistema Solar
+Se trata de calcular el peso de una persona en el resto de planetas de nuestro Sistema Solar.
 El peso en otro planeta se lo preguntáis a los que han estudiado Física en la universidad (call @Toni March) y así no tenéis que programar esta semana. 
 Si no se lo saben de memoria, aplicad este sencilla fórmula:
 ```
@@ -29,9 +29,6 @@ URANUS (8.686e+25, 2.5559e7),
 NEPTUNE (1.024e+26, 2.4746e7);   
 ```
 La salida del programa en consola es esta (sirve también como caso test), donde 175 es tu peso en la Tierra:
-```
-tu_masa = tu_peso_en_la_Tierra / gravedad_superficial_tierra;
-```
 ```
 $ java Planet 175 
 Your weight on MERCURY is 66.107583 
